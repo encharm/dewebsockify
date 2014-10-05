@@ -1,6 +1,6 @@
 {
   "name": "dewebsockify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Turn websockify websocket endpoint back into a TCP socket",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,7 @@
   },
   "author": "",
   "license": "MIT",
+  "bin": "./dewebsockify.js",
   "dependencies": {
     "ws": "^0.4.32"
   }
