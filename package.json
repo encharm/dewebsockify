@@ -1,0 +1,14 @@
+{
+  "name": "dewebsockify",
+  "version": "1.0.0",
+  "description": "Turn websockify websocket endpoint back into a TCP socket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^0.4.32"
+  }
+}
