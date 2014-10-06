@@ -17,12 +17,12 @@ var server = net.createServer(function(socket) {
 
   socket.on('error', function(err) {
     ws.close();
-    socket.close();
+    socket.destroy();
   });
 
   ws.on('error', function(err) {
     console.log("Connection from", socket.address().address ,"to end-point...", err.toString());
-    socket.end();
+    socket.destroy);
   });
 
   ws.on('open', function() {
@@ -39,12 +39,13 @@ var server = net.createServer(function(socket) {
 
   socket.on('end', function() {
     console.log("Connection from", socket.address ,"ended");
+    ws.removeAllListeners('close');
     ws.close();
   });
 
   ws.on('close', function() {
     console.log("Web socket server has closed connection, closing socket to", socket.address);
-    socket.end();
+    socket.destroy();
   });
 
 }).listen(port);

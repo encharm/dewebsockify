@@ -1,6 +1,6 @@
 {
   "name": "dewebsockify",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Turn websockify websocket endpoint back into a TCP socket",
   "main": "index.js",
   "scripts": {
